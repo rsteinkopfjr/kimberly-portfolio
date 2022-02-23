@@ -1,16 +1,64 @@
-<div class="pb-5 mb-4">
+<div class="pb-5">
     <ul class="nav justify-content-center">
       <li class="nav-item portfolio-filter">
-        <a class="nav-link" href="#">all projects</a>
+        <span class="nav-link" [ngClass]="allFilter ? 'active' : ''" (click)="click_all_filter()">all projects</span>
       </li>
       <li class="nav-item portfolio-filter">
-        <a class="nav-link" href="#">branding</a>
+        <span class="nav-link" [ngClass]="brandFilter ? 'active' : ''" (click)="click_brand_filter()">branding</span>
       </li>
       <li class="nav-item portfolio-filter">
-        <a class="nav-link" href="#">marketing</a>
+        <span class="nav-link" [ngClass]="marketingFilter ? 'active' : ''" (click)="click_marketing_filter()">marketing</span>
       </li>
       <li class="nav-item portfolio-filter">
-        <a class="nav-link" href="#">social</a>
+        <span class="nav-link" [ngClass]="socialFilter ? 'active' : ''" (click)="click_social_filter()">social</span>
       </li>
     </ul>
+  </div>
+  <div class="container text-center mb-4">
+    <div class="justify-content-center text-center">
+        <div *ngIf="allFilter || brandFilter" class="portfolio-item hvr-grow mb-5">
+            <a class="portfolio-card" href="#">
+                <span class="card-image">
+                    <img src="assets/images/coffee.jpg" class="img-fluid" alt>
+                </span>
+                <span class="card-text">
+                    <h1 class="card-text-heading">Project Number One</h1>
+                    <span class="card-text-subtitle">branding</span>
+                </span>
+            </a>
+        </div>
+        <div *ngIf="allFilter || marketingFilter" class="portfolio-item hvr-grow mb-5">
+            <a class="portfolio-card" href="#">
+                <span class="card-image">
+                    <img src="assets/images/entrepreneur.jpg" class="img-fluid" alt>
+                </span>
+                <span class="card-text">
+                    <h1 class="card-text-heading">Project Number Two</h1>
+                    <span class="card-text-subtitle">marketing</span>
+                </span>
+            </a>
+        </div>
+        <div *ngIf="allFilter || socialFilter" class="portfolio-item hvr-grow mb-5">
+            <a class="portfolio-card" href="#">
+                <span class="card-image">
+                    <img src="assets/images/social.jpg" class="img-fluid" alt>
+                </span>
+                <span class="card-text">
+                    <h1 class="card-text-heading">Project Number Three</h1>
+                    <span class="card-text-subtitle">social</span>
+                </span>
+            </a>
+        </div>
+        <div *ngIf="allFilter || brandFilter" class="portfolio-item hvr-grow mb-5">
+            <a class="portfolio-card" href="#">
+                <span class="card-image">
+                    <img src="assets/images/student.jpg" class="img-fluid" alt>
+                </span>
+                <span class="card-text">
+                    <h1 class="card-text-heading">Project Number Four</h1>
+                    <span class="card-text-subtitle">branding</span>
+                </span>
+            </a>
+        </div>
+    </div>
   </div>
