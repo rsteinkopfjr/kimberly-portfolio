@@ -1,0 +1,8 @@
+.navbar {
+  padding-top: 1.5rem;
+}
+.container-fluid {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
