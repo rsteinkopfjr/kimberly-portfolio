@@ -1,0 +1,33 @@
+/* sm ≥576px | md ≥768px | lg ≥992px | xl ≥1200px | xxl ≥1400px */
+@media screen and (max-width: 576px) {
+  .content {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+  }
+  #nav-portfolio-link,
+  #nav-about-link {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
+  .content {
+    padding: 0.5rem 2rem 0.5rem 2rem;
+  }
+  #navbar-collapse-btn,
+  #navbar-collapse {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .content {
+    padding: 0.5rem 5rem 0.5rem 5rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .content {
+    padding: 0.5rem 12rem 0.5rem 12rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+}
+@media screen and (min-width: 1400px) {
+}

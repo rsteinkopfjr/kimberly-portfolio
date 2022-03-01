@@ -1,8 +1,14 @@
 .navbar {
   padding-top: 1.5rem;
 }
-.container-fluid {
+.navbar-title {
+  justify-content: flex-start;
+}
+.navbar-links {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+}
+.nav-link {
+  color: black;
 }
