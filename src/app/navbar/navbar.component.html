@@ -1,26 +1,28 @@
-<nav class="navbar navbar-light">
-    <div class="container">
-      <div class="navbar-title">
-        <a class="navbar-brand" href="/">Kimberly Steinkopf</a>
+<nav class="navbar navbar-light ">
+  <div class="container">
+    <div class="navbar-title">
+      <a class="navbar-brand" href="/">Kimberly Steinkopf</a>
+    </div>
+    <div class="navbar-links">
+      <div>
+        <a id="nav-portfolio-link" class="nav-link" aria-current="page" routerLink="" routerLinkActive="active">Portfolio</a>
       </div>
-      <div class="navbar-links">
-        <div>
-          <a id="nav-portfolio-link" class="nav-link" aria-current="page" routerLink="" routerLinkActive="active">Portfolio</a>
-        </div>
-        <div>
-          <a id="nav-about-link" class="nav-link" routerLink="about" routerLinkActive="active">About</a>
-        </div>
-        <div id="navbar-collapse-btn">
-          <button class="btn btn-outline-dark" type="button" (click)="onNavBtnClick()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-          </svg></button>
-        </div>
+      <div>
+        <a id="nav-about-link" class="nav-link" routerLink="about" routerLinkActive="active">About</a>
+      </div>
+      <div id="navbar-collapse-btn">
+        <button class="btn btn-outline-dark" type="button" (click)="onNavBtnClick()"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+        </svg></button>
       </div>
     </div>
-  </nav>
-  <nav *ngIf="navbarCollapse" id="navbar-collapse" class="navbar-title">
-    <div id="collapse-container">
-      <a class="nav-link" aria-current="page" routerLink="" routerLinkActive="active">Portfolio</a>
-      <a class="nav-link" routerLink="about" routerLinkActive="active">About</a>
-    </div>
-  </nav>
+  </div>
+</nav>
+<nav *ngIf="navbarCollapse" id="navbar-collapse">
+  <div class="container">
+  <div id="collapse-container">
+    <a class="collapse-nav-link" aria-current="page" routerLink="" routerLinkActive="active">Portfolio</a>
+    <a class="collapse-nav-link" routerLink="about" routerLinkActive="active">About</a>
+  </div>
+</div>
+</nav>
