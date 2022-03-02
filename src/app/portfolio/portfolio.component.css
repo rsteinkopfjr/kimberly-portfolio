@@ -1,9 +1,14 @@
 .container.text-center.p-5 {
   border-bottom: 0.1rem black solid;
 }
-.nav-item {
-  margin: 0rem 0.5rem 0rem 0.5rem;
-  cursor: pointer;
+.filter-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.filter-items {
+  flex-wrap: nowrap;
+  padding: none !important;
 }
 .nav-link {
   color: black;
@@ -13,6 +18,8 @@
 }
 .portfolio-filter {
   display: inline-block;
+  margin: 0rem 0.5rem 0rem 0.5rem;
+  cursor: pointer;
   vertical-align: middle;
   -webkit-transform: perspective(0.1rem) translateZ(0);
   transform: perspective(0.1rem) translateZ(0);
