@@ -1,5 +1,5 @@
 /* sm ≥576px | md ≥768px | lg ≥992px | xl ≥1200px | xxl ≥1400px */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 577px) {
   .content {
     padding: 0.5rem 1rem 0.5rem 1rem;
   }
@@ -10,8 +10,17 @@
   .about-container {
     padding-top: 2rem;
   }
+  .col-left {
+    order: 1;
+    flex-basis: 100%;
+    padding: 0rem 0rem 4rem 0rem;
+  }
+  .col-right {
+    order: 2;
+    flex-basis: 100%;
+  }
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 768px) {
   .content {
     padding: 0.5rem 2rem 0.5rem 2rem;
   }
@@ -22,13 +31,23 @@
   .about-container {
     padding-top: 3rem;
   }
+  .col-left {
+    order: 1;
+    flex-basis: 50%;
+    padding-right: 2rem;
+  }
+  .col-right {
+    order: 2;
+    flex-basis: 50%;
+    padding-left: 2rem;
+  }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
   .content {
     padding: 0.5rem 5rem 0.5rem 5rem;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 991px) {
   .content {
     padding: 0.5rem 12rem 0.5rem 12rem;
   }
