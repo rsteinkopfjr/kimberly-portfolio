@@ -7,6 +7,9 @@
   #nav-about-link {
     display: none;
   }
+  .about-container {
+    padding-top: 2rem;
+  }
 }
 @media screen and (min-width: 576px) {
   .content {
@@ -15,6 +18,9 @@
   #navbar-collapse-btn,
   #navbar-collapse {
     display: none;
+  }
+  .about-container {
+    padding-top: 3rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -25,6 +31,9 @@
 @media screen and (min-width: 992px) {
   .content {
     padding: 0.5rem 12rem 0.5rem 12rem;
+  }
+  .about-container {
+    padding-top: 4rem;
   }
 }
 @media screen and (min-width: 1200px) {

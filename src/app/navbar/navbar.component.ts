@@ -16,10 +16,8 @@ export class NavbarComponent implements OnInit {
   public onNavBtnClick() {
     if (this.navbarCollapse != false) {
       this.navbarCollapse = false;
-      console.log(this.navbarCollapse);
     } else {
       this.navbarCollapse = true;
-      console.log(this.navbarCollapse);
     }
   }
 
