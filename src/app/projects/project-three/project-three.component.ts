@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-three.component.css']
 })
 export class ProjectThreeComponent implements OnInit {
+  public currentPage:string = "pageThree";
 
   constructor() { }
 

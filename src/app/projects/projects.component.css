@@ -1,0 +1,24 @@
+#project-lower {
+  margin-top: 4rem;
+  padding: 1.5rem 0rem 1rem 0rem;
+  border-top: 0.1rem black solid;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: baseline;
+}
+#prev-project {
+  cursor: pointer;
+}
+#prev-link {
+  padding-left: 1rem;
+}
+#all-project {
+  cursor: pointer;
+}
+#next-project {
+  cursor: pointer;
+}
+#next-link {
+  padding-right: 1rem;
+}

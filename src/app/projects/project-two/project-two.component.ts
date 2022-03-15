@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-project-two',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./project-two.component.css']
 })
 export class ProjectTwoComponent implements OnInit {
+  public currentPage:string = "pageTwo";
 
   constructor() { }
 
