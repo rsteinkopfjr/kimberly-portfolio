@@ -15,7 +15,7 @@
       <span class="nav-link" [ngClass]="allFilter ? 'active' : ''" (click)="click_all_filter()">all projects</span>
     </div>
     <div class="portfolio-filter">
-      <span class="nav-link" [ngClass]="brandFilter ? 'active' : ''" (click)="click_brand_filter()">branding</span>
+      <span class="nav-link" [ngClass]="contentFilter ? 'active' : ''" (click)="click_content_filter()">content</span>
     </div>
   </div>
   <div class="filter-items">
@@ -28,14 +28,14 @@
   </div>
 </div>
 <div class="container justify-content-center text-center mb-4">
-  <div *ngIf="allFilter || brandFilter" class="portfolio-item hvr-grow mb-5">
+  <div *ngIf="allFilter || contentFilter" class="portfolio-item hvr-grow mb-5">
     <a class="portfolio-card" routerLink="project/one">
       <span class="card-image">
-        <img src="assets/images/coffee.jpg" class="img-fluid" alt>
+        <img src="assets/images/iin-project.jpeg" class="img-fluid" alt>
       </span>
       <span class="card-text">
-        <h1 class="card-text-heading">Project Number One</h1>
-        <span class="card-text-subtitle">branding</span>
+        <h1 class="card-text-heading">THE INSTITUTE FOR INTEGRATIVE NUTRITION</h1>
+        <span class="card-text-subtitle">content</span>
       </span>
     </a>
   </div>
@@ -61,14 +61,14 @@
       </span>
     </a>
   </div>
-  <div *ngIf="allFilter || brandFilter" class="portfolio-item hvr-grow mb-5">
+  <div *ngIf="allFilter || contentFilter" class="portfolio-item hvr-grow mb-5">
     <a class="portfolio-card" routerLink="project/four">
       <span class="card-image">
         <img src="assets/images/student.jpg" class="img-fluid" alt>
       </span>
       <span class="card-text">
         <h1 class="card-text-heading">Project Number Four</h1>
-        <span class="card-text-subtitle">branding</span>
+        <span class="card-text-subtitle">content</span>
       </span>
     </a>
   </div>

@@ -1,2 +1,55 @@
-<p>project-four works!</p>
+<div class="container text-center p-5 mb-4">
+    <div class="row justify-content-center text-center py-5">
+        <h3 class="display-5 fw-bold project-title">NGI Content Writer</h3>
+        <div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam massa mi, mattis id massa a, 
+                posuere elementum magna. Suspendisse vel mattis ipsum, vitae laoreet ante. Proin ultricies tortor 
+                sapien, eu faucibus mauris lacinia condimentum. Suspendisse potenti.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="container blog-post-container">
+    <div class="row blog-post-row">
+        <div class="col">
+            <a class="blog-post-item hvr-grow">
+                <img src="assets/images/journaling-blog.jpeg" class="img-fluid" alt>
+                <span class="card-text text-center">
+                    <p>Twelve Health Tips to Get Through the End of Winter</p>
+                    <button type="button" class="btn btn-outline-light" (click)="onViewBlogPost('journal')">View</button>
+                </span>
+            </a>  
+        </div>
+        <div class="col">
+            <a class="blog-post-item hvr-grow">
+                <img src="assets/images/spring-blog.jpeg" class="img-fluid" alt>
+                <span class="card-text text-center">
+                    <p>How to Attain Optimal Heart Health: Lifestyle Tips from the Blue Zones</p>
+                    <button type="button" class="btn btn-outline-light" (click)="onViewBlogPost('spring')">View</button>
+                </span>
+            </a>  
+        </div>
+    </div>
+    <div class="row blog-post-row">
+        <div class="col">
+            <a class="blog-post-item hvr-grow">
+                <img src="assets/images/female-chef-blog.jpeg" class="img-fluid" alt>
+                <span class="card-text text-center">
+                    <p>Beyond Dry January: Thinking About Alcohol and Your Health</p>
+                    <button type="button" class="btn btn-outline-light" (click)="onViewBlogPost('female')">View</button>
+                </span>
+            </a>  
+        </div>
+        <div class="col">
+            <a class="blog-post-item hvr-grow">
+                <img src="assets/images/hydration-blog.jpeg" class="img-fluid" alt>
+                <span class="card-text text-center">
+                    <p>New Year, Renewed You: Checking In</p>
+                    <button type="button" class="btn btn-outline-light" (click)="onViewBlogPost('hydration')">View</button>
+                </span>
+            </a>  
+        </div>
+    </div>
+</div>
 <projects-lower [getCurrentPage]='currentPage'></projects-lower>
