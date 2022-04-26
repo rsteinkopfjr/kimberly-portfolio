@@ -19,7 +19,7 @@ export class ProjectsComponent implements OnInit {
   public setNextPrevPages() {
     if (this.getCurrentPage == 'pageOne') {
       this.nextPage = 'two';
-      this.previousPage = 'four';
+      this.previousPage = 'five';
     }
     if (this.getCurrentPage == 'pageTwo') {
       this.nextPage = 'three';
@@ -30,8 +30,12 @@ export class ProjectsComponent implements OnInit {
       this.previousPage = 'two';
     }
     if (this.getCurrentPage == 'pageFour') {
-      this.nextPage = 'one';
+      this.nextPage = 'five';
       this.previousPage = 'three';
+    }
+    if (this.getCurrentPage == 'pageFive') {
+      this.nextPage = 'one';
+      this.previousPage = 'four';
     }
   }
 }

@@ -12,6 +12,7 @@ import { ProjectOneComponent } from './projects/project-one/project-one.componen
 import { ProjectTwoComponent } from './projects/project-two/project-two.component';
 import { ProjectThreeComponent } from './projects/project-three/project-three.component';
 import { ProjectFourComponent } from './projects/project-four/project-four.component';
+import { ProjectFiveComponent } from './projects/project-five/project-five.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ProjectFourComponent } from './projects/project-four/project-four.compo
     ProjectOneComponent,
     ProjectTwoComponent,
     ProjectThreeComponent,
-    ProjectFourComponent
+    ProjectFourComponent,
+    ProjectFiveComponent
   ],
   imports: [
     BrowserModule,

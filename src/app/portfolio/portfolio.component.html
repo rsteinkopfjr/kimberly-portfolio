@@ -20,10 +20,10 @@
   </div>
   <div class="filter-items">
     <div class="portfolio-filter">
-      <span class="nav-link" [ngClass]="marketingFilter ? 'active' : ''" (click)="click_marketing_filter()">marketing</span>
+      <span class="nav-link" [ngClass]="communityFilter ? 'active' : ''" (click)="click_community_filter()">community</span>
     </div>
     <div class="portfolio-filter">
-      <span class="nav-link" [ngClass]="socialFilter ? 'active' : ''" (click)="click_social_filter()">social</span>
+      <span class="nav-link" [ngClass]="productFilter ? 'active' : ''" (click)="click_product_filter()">product</span>
     </div>
   </div>
 </div>
@@ -39,25 +39,25 @@
       </span>
     </a>
   </div>
-  <div *ngIf="allFilter || marketingFilter" class="portfolio-item hvr-grow mb-5">
+  <div *ngIf="allFilter || communityFilter" class="portfolio-item hvr-grow mb-5">
     <a class="portfolio-card" routerLink="project/two">
       <span class="card-image">
         <img src="assets/images/entrepreneur.jpg" class="img-fluid" alt>
       </span>
       <span class="card-text">
-        <h1 class="card-text-heading">Project Number Two</h1>
-        <span class="card-text-subtitle">marketing</span>
+        <h1 class="card-text-heading">COMMUNITY PAGE ONE</h1>
+        <span class="card-text-subtitle">community</span>
       </span>
     </a>
   </div>
-  <div *ngIf="allFilter || socialFilter" class="portfolio-item hvr-grow mb-5">
+  <div *ngIf="allFilter || productFilter" class="portfolio-item hvr-grow mb-5">
     <a class="portfolio-card" routerLink="project/three">
       <span class="card-image">
         <img src="assets/images/social.jpg" class="img-fluid" alt>
       </span>
       <span class="card-text">
-        <h1 class="card-text-heading">Project Number Three</h1>
-        <span class="card-text-subtitle">social</span>
+        <h1 class="card-text-heading">PRODUCT PAGE ONE</h1>
+        <span class="card-text-subtitle">product</span>
       </span>
     </a>
   </div>
@@ -67,8 +67,19 @@
         <img src="assets/images/student.jpg" class="img-fluid" alt>
       </span>
       <span class="card-text">
-        <h1 class="card-text-heading">Project Number Four</h1>
+        <h1 class="card-text-heading">NATURAL GOURMENT INSTITUTE</h1>
         <span class="card-text-subtitle">content</span>
+      </span>
+    </a>
+  </div>
+  <div *ngIf="allFilter || communityFilter" class="portfolio-item hvr-grow mb-5">
+    <a class="portfolio-card" routerLink="project/five">
+      <span class="card-image">
+        <img src="assets/images/entrepreneur.jpg" class="img-fluid" alt>
+      </span>
+      <span class="card-text">
+        <h1 class="card-text-heading">COMMUNITY PAGE TWO</h1>
+        <span class="card-text-subtitle">community</span>
       </span>
     </a>
   </div>
