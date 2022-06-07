@@ -15,6 +15,10 @@
   cursor: pointer;
   text-decoration: none;
 }
+.bi-linkedin,
+.bi-download {
+  margin-left: 0.5rem;
+}
 .skills-item {
   border-bottom: 0.15rem black solid;
 }
@@ -27,4 +31,7 @@
 }
 .skills-body {
   padding: 1rem 0rem 2rem 0rem;
+}
+#about-image {
+  border-radius: 50%;
 }
